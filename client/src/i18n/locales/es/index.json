@@ -171,5 +171,7 @@
   "atRisk": "en riesgo",
   "notMet": "no cumplido",
   "notEnoughInfo": "información insuficiente",
-  "exceededLimit": "excedió el límite"
+  "exceededLimit": "excedió el límite",
+
+  "asOf":"A partir de"
 }

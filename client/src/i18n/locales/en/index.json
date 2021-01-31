@@ -171,5 +171,7 @@
   "atRisk": "at risk",
   "notMet": "not met",
   "notEnoughInfo": "not enough info",
-  "exceededLimit": "exceeded limit"
+  "exceededLimit": "exceeded limit",
+
+  "asOf": "As of"
 }

@@ -284,7 +284,7 @@ export function Dashboard() {
           >
             {dates.dateFilter}
           </Button>
-          <Typography.Text className="text-gray3">{`As of: ${dates.asOf}`}</Typography.Text>
+          <Typography.Text className="text-gray3">{`${t('asOf')}: ${dates.asOf}`}</Typography.Text>
         </div>
         <Typography.Text className="md-3 text-base">
           {t('revenueProjections')}
