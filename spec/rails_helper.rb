@@ -70,11 +70,13 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
-RSpec.configure do |config|
-  # add FactoryBot methods
-  config.include FactoryBot::Syntax::Methods
+# Add ActiveJob Test helpers and configure
+ActiveJob::Base.queue_adapter = :test
 
-  # add Devise helpers
+RSpec.configure do |config|
+  # add helper methods
+  config.include FactoryBot::Syntax::Methods
+  config.include ActiveJob::TestHelper
   config.include Devise::Test::IntegrationHelpers, type: :request
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
